@@ -1,0 +1,272 @@
+:root {
+    --mainYellow: #F29829;
+    --mainWhite: #fff;
+    --mainBlue: #3B4FBF;
+    --mainRed: #F24464;
+    --TransGreen: #0FA66E;
+    --blue: #05C7F2;
+
+}
+
+body {
+    margin-top: 65px;
+    /* font-family: "Didact Gothic", sans-serif; */
+}
+
+/* navbar */
+nav {
+    background-color: var(--mainWhite);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* change img size  */
+.navbar-brand img {
+    width: 150px;
+
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: var(--mainYellow);
+}
+
+.nav-link:hover {
+    font-size: 1.5rem;
+    color: var(--mainBlue);
+}
+
+li .active {
+    border-bottom: 0.1rem solid var(--mainYellow);
+}
+
+.navbar-icons i {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--mainRed);
+    transition: 0.5s;
+
+}
+
+.navbar-icons i:hover {
+    scale: 1.2;
+
+}
+
+.nav-button {
+    background-color: var(--TransGreen);
+    color: var(--mainWhite);
+    transition: 0.5s;
+}
+
+.nav-button:hover {
+    scale: 1.1;
+    color: var(--mainWhite);
+}
+
+/* carousel */
+.carousel {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1));
+
+}
+
+.carousel h2 {
+    color: var(--mainRed);
+}
+
+.carousel h4 {
+    color: var(--mainYellow);
+}
+
+/* button component https://uiverse.io/KINGFRESS/purple-kangaroo-17 */
+/* but change .button instead of button and add button class in button element */
+/* change only the background color and the effect */
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: var(--mainBlue);
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: var(--mainRed);
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.button span:nth-child(6) {
+    position: relative;
+}
+
+.button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+}
+
+.button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+
+.button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+}
+
+.button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+}
+
+.button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+}
+
+.button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}
+
+/* button component End */
+
+
+.carousel img {
+    height: 420px;
+
+}
+
+.carousel-item img {
+    max-height: 450px;
+    /* The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. */
+    object-fit: cover
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+/* choose us */
+
+.features h2 {
+    color: var(--mainBlue);
+}
+
+.features i {
+    color: var(--mainRed);
+
+}
+
+.feature-item {
+    height: 400px;
+    box-shadow: rgb(0, 0, 0.075) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* items */
+
+.items h2 {
+    color: var(--mainBlue);
+}
+
+.card-img {
+    overflow: hidden;
+
+}
+
+.card img {
+    transition: .5s;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.btn-warning {
+    color: var(--mainBlue);
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 2px;
+}
+
+.btn-warning:hover {
+    color: var(--mainYellow);
+    background-color: var(--mainWhite);
+}
+
+.btn-warning:hover i {
+    color: var(--mainBlue);
+}
+
+/* copy the btn-outline-warning to change in danger */
+.btn-danger {
+    color: var(--mainWhite);
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 2px;
+}
+
+.btn-danger:hover {
+    color: var(--mainBlue);
+    background-color: var(--mainWhite);
+}
+
+.btn-danger:hover i {
+    color: var(--mainBlue);
+}
+
+/* cover */
+.cover{
+    background: var(--mainYellow);
+    height: 500px;
+}
+.cover h1{
+    color: var(--mainWhite);
+    font-size: 4rem;
+    font-weight: 800;
+}
+.cover p{
+    font-size: 3rem;
+}
+.cover button{
+  padding: 10px 30px;
+  font-size: 17px;
+}
+
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #3B4FBF;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203), rgba(37, 117, 252));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(106, 17, 203), rgba(37, 117, 252)) */ 
+    }
+
+    .btn-primary {
+        background-color: #F29829 !important;
+        border-color: #F29829 !important;
+    }
